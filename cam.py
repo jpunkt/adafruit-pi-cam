@@ -550,7 +550,8 @@ def showImage(n):
 os.putenv('SDL_VIDEODRIVER', 'fbcon')
 os.putenv('SDL_FBDEV'      , '/dev/fb1')
 os.putenv('SDL_MOUSEDRV'   , 'TSLIB')
-os.putenv('SDL_MOUSEDEV'   , '/dev/input/touchscreen')
+# os.putenv('SDL_MOUSEDEV'   , '/dev/input/touchscreen')
+os.putenv('SDL_MOUSEDEV'   , '/dev/input/mouse0')  # XXX changed
 
 # Get user & group IDs for file & folder creation
 # (Want these to be 'pi' or other user, not root)
